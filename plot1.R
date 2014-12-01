@@ -28,7 +28,7 @@ data <- data[!is.na(data$date.time) &
         data$date.time < strptime("2007-02-03", "%Y-%m-%d"),]
 
 # open a png file to plot to
-png(filename="plot1.png")
+png(filename="plot1.png", bg="transparent")
 
 # plot the histogram
 hist(data$global.active.power, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
