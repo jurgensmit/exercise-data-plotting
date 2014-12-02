@@ -43,7 +43,8 @@ lines(data$date.time, data$sub.metering.3, col="blue")
 legend("topright", 
        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col=c("black", "red", "blue"), 
-       lty="solid")
+       lty="solid",
+       bty="n")
 
 # plot the third graph
 plot(data$date.time, data$voltage, type="l", xlab="datetime", ylab="Voltage")
