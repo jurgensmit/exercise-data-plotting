@@ -28,7 +28,8 @@ data <- data[!is.na(data$date.time) &
         data$date.time < strptime("2007-02-03", "%Y-%m-%d"),]
 
 # open a png file to plot to
-png(filename="plot3.png", bg="transparent")
+# note: removed the transparent background which does not render correctly on all viewers
+png(filename="plot3.png")
 
 # plot the sub metering 1 data
 plot(data$date.time, data$sub.metering.1, type="l", xlab="", ylab="Energy sub metering")

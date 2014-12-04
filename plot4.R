@@ -28,7 +28,8 @@ data <- data[!is.na(data$date.time) &
         data$date.time < strptime("2007-02-03", "%Y-%m-%d"),]
 
 # open a png file to plot to
-png(filename="plot4.png", bg="transparent")
+# note: removed the transparent background which does not render correctly on all viewers
+png(filename="plot4.png")
 
 # create a grid of 4 graphs
 par(mfcol=c(2, 2))
